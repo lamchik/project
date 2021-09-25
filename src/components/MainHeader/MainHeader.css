@@ -1,0 +1,33 @@
+.header__text {
+    font-family: "Circe", 'Arial', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: rgb(39, 39, 39);
+    line-height: 1.024;
+}
+
+.header {
+    width: 305px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header__icon-home {
+    width: 26px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.header__icon-line {
+    width: 2px;
+    height: 24px;
+    margin-right: 25px;
+}
+
+
+
+
+
+
+

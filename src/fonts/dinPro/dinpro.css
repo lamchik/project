@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'dinpro';
+    font-size: 16px;
+    font-display: swap;
+    src: url("./din-pro-light.ttf?v=3.13") format("ttf")
+}
+
+@font-face {
+    font-family: 'dinpro-light';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100;
+    src: url("din-pro-light-italic.ttf") format("ttf")
+}

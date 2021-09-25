@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+.app {
+    background-image: url("../../images/background.png");
+    min-height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__container {
+    width: 100vw;
+    height: 100vh;
+    padding: 2% 3% 2% 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__bact-4{
+    position: absolute;
+    top: 8%;
+    right: 21%;
+    animation: move-bact-4 8s linear 0s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__bact-5{
+    position: absolute;
+    top: 2.5%;
+    right: 4.5%;
 }
 
-.App-link {
-  color: #61dafb;
+.app__bact-2{
+    position: absolute;
+    top: 26%;
+    right: 4%;
+    animation: move 10s linear, rotate 50s linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__bact-7{
+    width: 17%;
+    height: 17%;
+    position: absolute;
+    bottom: 0;
+    right:24%;
+    animation: scale 5s linear 0s infinite;
+}
+
+.app__sperm{
+    width: 56%;
+    height: 15%;
+    position: absolute;
+    top: 24.6%;
+    right: 1%;
+}
+
+.app__bact-6{
+    position: absolute;
+    bottom: 2%;
+    left: 34%;
+}
+
+.app__bact-1{
+    position: absolute;
+    left: 2%;
+    bottom: 24%;
+    animation: move-bact-1 8s linear 0s infinite;
+}
+
+.app__bact-3{
+    width: 12%;
+    height: 18%;
+    position: absolute;
+    left: 0;
+    top: 12%;
+}
+
+@keyframes move {
+    0% {
+        right: 4%;
+        top: 26%;
+    }
+    25% {
+        right: 6%;
+        top: 24%;
+    }
+    50% {
+        right: 8%;
+        top: 19%;
+    }
+    75% {
+        right: 6%;
+        top: 24%;
+    }
+    100% {
+        right: 4%;
+        top: 26%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-bact-4 {
+    0% {
+        right: 21%;
+        top: 8%;
+    }
+
+    50% {
+        right: 26%;
+        top: 4%;
+    }
+
+    100% {
+        right: 21%;
+        top: 8%;
+    }
+}
+
+
+@keyframes move-bact-1 {
+    0% {
+        left: 2%;
+        bottom: 24%;
+    }
+
+    50% {
+        left: 1%;
+        bottom: 29%;
+    }
+
+    100% {
+        left: 2%;
+        bottom: 24%;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
